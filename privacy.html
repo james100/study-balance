@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>공부잔고 개인정보처리방침</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* 레이아웃: 앱과 같은 연민트 바탕 위에 흰 문서 한 장. 읽는 폭 65자. */
+:root{
+  --bg:#E6F4EE; --card:#FFFFFF; --ink:#141A17; --ink2:#5F6B65; --ink3:#9AA8A1;
+  --rule:#E3EBE7; --green:#17B26A; --green-soft:#E2F7EC;
+  --font:"Noto Sans KR",-apple-system,"Apple SD Gothic Neo",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0F1714; --card:#172019; --ink:#EEF3F0; --ink2:#A7B4AD; --ink3:#73807A;
+  --rule:#26332C; --green:#2ED083; --green-soft:#17301F; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0F1714; --card:#172019; --ink:#EEF3F0; --ink2:#A7B4AD; --ink3:#73807A;
+  --rule:#26332C; --green:#2ED083; --green-soft:#17301F; color-scheme:dark }
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.7;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.doc{max-width:680px;margin:0 auto;background:var(--card);border-radius:20px;padding:36px 28px 40px;box-shadow:0 6px 24px rgba(20,60,40,.06)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--green)}
+h1{font-size:26px;font-weight:700;margin:6px 0 4px;text-wrap:balance;line-height:1.3}
+.meta{font-size:13px;color:var(--ink3);margin-bottom:22px}
+h2{font-size:16px;font-weight:700;margin:26px 0 8px;padding-top:18px;border-top:1px solid var(--rule)}
+p,li{font-size:15px;color:var(--ink);margin:0 0 8px}
+ul{padding-left:18px;margin:0 0 8px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 10px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{color:var(--ink2);font-weight:500;white-space:nowrap}
+.note{background:var(--green-soft);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--ink2);margin:10px 0}
+.wrap{overflow-x:auto}
+.foot{margin-top:28px;font-size:13px;color:var(--ink3)}
+.foot a{color:var(--green)}
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+<main class="doc">
+  <div class="eyebrow">공부잔고</div>
+  <h1>개인정보처리방침</h1>
+  <div class="meta">시행일 2026년 10월 17일 · 모아랩</div>
+
+  <p>공부잔고는 공부한 시간을 기록하고 시험일까지 남은 양을 계산해 주는 앱입니다. 모아랩(이하 "회사")은 앱을 운영하면서 아래와 같이 개인정보를 다룹니다.</p>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>회사는 이름, 이메일, 전화번호 같은 개인 식별 정보를 받지 않습니다. 회원가입도 없습니다. 앱이 다루는 정보는 다음이 전부입니다.</p>
+  <div class="wrap"><table>
+    <tr><th>항목</th><th>내용</th><th>어디에 저장되나</th></tr>
+    <tr><td>공부 기록</td><td>시작·종료 시각, 시간대 구분(출퇴근길·점심 등), 시험 이름, 시험일, 목표 시간, 하루 계획 시간</td><td>기기 안, 그리고 백업용으로 회사 서버</td></tr>
+    <tr><td>익명 식별자</td><td>기기별로 자동 생성되는 무작위 ID. 사용자를 특정할 수 없음</td><td>기기 안, 회사 서버</td></tr>
+    <tr><td>구독 상태</td><td>프리미엄 구독 여부</td><td>Apple이 관리. 회사는 결제 정보(카드 등)를 받지 않음</td></tr>
+  </table></div>
+
+  <h2>2. 왜 쓰는지</h2>
+  <ul>
+    <li><strong>기록과 계산</strong>: 모은 시간, D-day, 시험일까지 부족한 시간을 보여주기 위해</li>
+    <li><strong>백업</strong>: 폰을 바꾸거나 앱을 지웠을 때 기록을 되살리기 위해</li>
+    <li><strong>주간 코멘트(프리미엄)</strong>: 한 주의 공부 시간을 요약한 숫자를 AI에 보내 세 줄 코멘트를 받기 위해</li>
+  </ul>
+
+  <h2>3. 다른 회사에 넘기는 정보</h2>
+  <div class="wrap"><table>
+    <tr><th>받는 곳</th><th>넘기는 정보</th><th>목적</th></tr>
+    <tr><td>Google Firebase (서버 위치: 대한민국 서울)</td><td>익명 식별자, 공부 기록 백업</td><td>로그인 없는 인증, 백업 저장</td></tr>
+    <tr><td>Anthropic (미국)</td><td>주간 합계 숫자만: 주간 공부 시간, 요일별·시간대별 합계, 남은 일수, 목표 시간</td><td>주간 코멘트 생성</td></tr>
+    <tr><td>Apple</td><td>구독 결제</td><td>인앱 결제 처리</td></tr>
+  </table></div>
+  <div class="note">AI에 보내는 데이터에는 시험 이름, 기기 식별자, 개별 기록 시각이 들어가지 않습니다. 숫자 묶음만 갑니다. 회사는 광고 SDK나 분석 도구를 쓰지 않습니다.</div>
+
+  <h2>4. 얼마나 보관하는지</h2>
+  <ul>
+    <li>기기 안의 기록: 사용자가 지울 때까지</li>
+    <li>서버 백업: 마지막 백업 후 2년이 지나면 삭제</li>
+    <li>AI 요청 기록(서버 로그): 30일</li>
+  </ul>
+
+  <h2>5. 지우는 방법</h2>
+  <ul>
+    <li>앱 안에서 <strong>설정 → 이 시험 삭제하기</strong>를 누르면 그 시험과 기록이 기기와 다음 백업에서 지워집니다.</li>
+    <li>앱을 삭제하면 기기 안 기록은 바로 사라집니다. 서버 백업까지 바로 지우고 싶으면 아래 연락처로 요청해 주세요. 7일 안에 처리합니다.</li>
+  </ul>
+
+  <h2>6. 사용자의 권리</h2>
+  <p>사용자는 자신의 기록을 열람·수정·삭제할 수 있고, 백업을 원하지 않으면 요청으로 중단할 수 있습니다. 만 14세 미만 아동의 정보는 수집하지 않습니다.</p>
+
+  <h2>7. 안전조치</h2>
+  <p>서버와 앱 사이 통신은 암호화(HTTPS)됩니다. 서버 백업은 해당 기기의 익명 식별자로만 읽고 쓸 수 있도록 접근 규칙을 두고 있습니다.</p>
+
+  <h2>8. 바뀔 때</h2>
+  <p>내용이 바뀌면 이 페이지의 시행일을 고치고, 중요한 변경이면 앱 안에서 알립니다.</p>
+
+  <h2>9. 문의</h2>
+  <p>개인정보 보호책임자: 모아랩 대표<br>이메일: <span id="contact">limlimlimlim2026@gmail.com</span></p>
+
+  <div class="foot">함께 보기: <a href="terms.html">이용약관</a></div>
+</main>
+</body>
+</html>
